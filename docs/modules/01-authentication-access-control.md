@@ -17,7 +17,7 @@ Modul ini bertanggung jawab untuk memverifikasi identitas pengguna dan mengatur 
 
 - **Pelanggan:** mendaftar, masuk, dan mengakses fitur pelanggan.
 - **Staf Laundry:** masuk dan mengakses fitur operasional sesuai hak aksesnya.
-- **Pemilik Laundry:** masuk, menyetujui akun staf, dan menetapkan hak aksesnya.
+- **Pemilik Laundry(Admin):** masuk, menyetujui akun staf, dan menetapkan hak aksesnya.
 
 Akun pemilik disiapkan melalui konfigurasi awal sistem, bukan melalui pendaftaran publik.
 
