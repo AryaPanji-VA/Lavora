@@ -1,4 +1,4 @@
-# Modul 5: Manajemen Pembayaran
+# Modul 5: Payment Management
 
 **Tanggung jawab:** Mengelola metode dan status pembayaran layanan laundry, baik online maupun offline, dengan alur online dimodelkan secara konseptual tanpa integrasi payment gateway. Pemilik laundry mengawasi pencatatan pembayaran.
 
