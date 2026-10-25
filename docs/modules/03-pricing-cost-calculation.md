@@ -52,7 +52,7 @@ Sistem menampilkan informasi biaya laundry kepada pelanggan agar pelanggan dapat
 
 ## 6. Ketergantungan dengan Modul Lain
 
-- [Modul 1 — Autentikasi dan Pengaturan Hak Akses](01-authentication-access-content.md): menyediakan identitas pengguna dan pembatasan hak akses untuk pengelolaan tarif serta informasi biaya.
+- [Modul 1 — Autentikasi dan Pengaturan Hak Akses](01-authentication-access-control.md): menyediakan identitas pengguna dan pembatasan hak akses untuk pengelolaan tarif serta informasi biaya.
 - [Modul 2 — Pengelolaan Pesanan](02-order-management.md): menyediakan data pesanan yang diperlukan dalam proses perhitungan dan penyimpanan biaya laundry.
 
 Modul ini mendukung proses pengelolaan pesanan dengan menyediakan perhitungan biaya berdasarkan berat cucian dan tarif yang berlaku.
