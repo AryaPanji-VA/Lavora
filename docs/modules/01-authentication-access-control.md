@@ -4,7 +4,7 @@
 
 **ID Modul:** M01
 
-Modul ini bertanggung jawab untuk memverifikasi identitas pengguna dan mengatur hak akses berdasarkan peran dalam sistem Lavora. Modul ini memastikan bahwa pelanggan, staf laundry, dan pemilik laundry hanya dapat mengakses fitur sesuai tanggung jawabnya.
+Modul ini bertanggung jawab untuk memverifikasi identitas pengguna dan mengatur hak akses berdasarkan peran dalam sistem Lavora. Fitur pendaftaran, autentikasi, persetujuan akun staf, dan pengaturan hak akses dikelompokkan dalam satu modul karena semuanya berkaitan dengan pengelolaan identitas serta akses pengguna ke sistem. Modul ini memastikan bahwa pelanggan, staf laundry, dan pemilik laundry hanya dapat mengakses fitur sesuai tanggung jawabnya.
 
 ## 2. Tujuan
 
@@ -47,16 +47,7 @@ Sistem membatasi akses fitur berdasarkan peran:
 5. Pengguna hanya dapat mengakses fitur sesuai perannya.
 6. Pelanggan tidak boleh melihat atau mengubah pesanan milik pelanggan lain.
 
-## 6. Masukan dan Keluaran
-
-| Masukan | Keluaran |
-|---|---|
-| Data pendaftaran pelanggan | Akun berhasil dibuat atau pesan kesalahan |
-| Informasi akun untuk masuk | Hasil verifikasi dan akses jika berhasil |
-| Persetujuan pemilik atas akun staf | Hak akses staf diberikan |
-| Permintaan keluar | Sesi pengguna diakhiri |
-
-## 7. Ketergantungan dengan Modul Lain
+## 6. Ketergantungan dengan Modul Lain
 
 - [Modul 2 — Pengelolaan Pesanan](02-order-management.md): menyediakan identitas pengguna dan pembatasan akses saat pesanan dibuat atau dilihat.
 

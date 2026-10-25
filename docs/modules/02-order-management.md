@@ -4,7 +4,7 @@
 
 **ID Modul:** M02
 
-Modul ini bertanggung jawab untuk mengelola pesanan laundry pelanggan, mulai dari pembuatan pesanan hingga penyimpanan detail layanan dan pakaian yang akan dicuci.
+Modul ini bertanggung jawab untuk mengelola pesanan laundry pelanggan, mulai dari pembuatan pesanan hingga penyimpanan detail layanan dan pakaian yang akan dicuci. Fitur pembuatan, pencatatan, dan pengelolaan pesanan dikelompokkan dalam satu modul karena semuanya berfokus pada siklus pengelolaan pesanan laundry pelanggan.
 
 ## 2. Tujuan
 
