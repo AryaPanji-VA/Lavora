@@ -32,7 +32,7 @@ Staf laundry menggunakan Lavora untuk:
 - Mencatat pembayaran pelanggan.
 - Membantu operasional laundry melalui sistem yang terpusat.
 
-### 3.3 Pemilik Laundry (Laundry Owner)
+### 3.3 Pemilik Laundry (Laundry Owner/Admin)
 
 Pemilik laundry menggunakan Lavora untuk:
 - Login ke sistem menggunakan akun pemilik.
