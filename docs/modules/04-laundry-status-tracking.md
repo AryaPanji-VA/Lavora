@@ -1,33 +1,54 @@
-# Modul 4: Laundry Status Tracking
+# Modul 4 — Pelacakan Status Laundry
 
-**Tanggung Jawab:**
+## 1. Gambaran Umum
 
-Modul ini bertanggung jawab mengelola dan memantau perkembangan proses laundry pelanggan. Modul ini memungkinkan staf laundry memperbarui status pesanan, sedangkan pelanggan dapat melihat perkembangan pesanan mereka.
+**ID Modul:** M04
 
-**Data:**
-- ID Pesanan (`order_id`)
-- Status Laundry (`laundry_status`)
-- Waktu Pembaruan Status (`updated_at`)
-- ID Pengguna yang Memperbarui Status (`updated_by`)
-- Status Sebelumnya (`previous_status`)
+Modul ini bertanggung jawab untuk mengelola informasi status pesanan laundry agar pelanggan dapat mengetahui perkembangan pesanan mereka. Modul ini mengelompokkan pembaruan status dan pemantauan pesanan karena keduanya berkaitan dengan penyampaian informasi mengenai kondisi pesanan selama proses layanan laundry. Modul ini memastikan informasi status pesanan dapat diperbarui oleh pengguna yang berwenang dan dilihat oleh pelanggan sesuai hak aksesnya.
 
-**Aturan:**
-- Setiap pesanan harus memiliki ID pesanan yang valid agar status laundry dapat dilacak.
-- Pelanggan hanya dapat melihat status pesanan miliknya sendiri.
-- Staf laundry dan pemilik laundry memiliki hak akses untuk memperbarui status laundry.
-- Status laundry harus sesuai dengan kondisi pengerjaan pesanan.
-- Setiap perubahan status harus disimpan agar informasi pesanan selalu terbaru.
-- Jika ID pesanan tidak ditemukan, sistem harus menampilkan pesan kesalahan.
-- Sistem harus menolak pembaruan status oleh pengguna yang tidak memiliki hak akses.
-- Perubahan status harus mengikuti alur proses laundry yang telah ditentukan oleh sistem.
-- Informasi status harus diperbarui sesuai kondisi pesanan yang sebenarnya.
+## 2. Tujuan
 
-**Hubungan antar Modul:**
-- `01-authentication-access-control.md`: Memverifikasi identitas dan hak akses pengguna sebelum melakukan pembaruan status laundry.
-- `02-order-management.md`: Menyediakan data dan ID pesanan yang digunakan untuk melacak perkembangan laundry.
-- `06-customer-notification.md`: Menggunakan informasi perubahan status untuk memberikan notifikasi kepada pelanggan.
+- Memungkinkan staf laundry memperbarui status pesanan.
+- Memfasilitasi pemilik laundry dalam memantau dan memperbarui status pesanan sesuai hak aksesnya.
+- Memungkinkan pelanggan melihat perkembangan pesanan laundry.
+- Memastikan informasi status yang ditampilkan sesuai dengan data pesanan dalam sistem Lavora.
 
-**Alasan Pengelompokan:**
+## 3. Aktor
 
-Fitur melihat status pesanan, memperbarui status pengerjaan cucian, memvalidasi ID pesanan, dan mencatat perubahan status memiliki tujuan yang sama, yaitu memantau perkembangan proses laundry. 
-Oleh karena itu, fitur-fitur tersebut dikelompokkan dalam satu modul agar pelanggan dapat mengetahui perkembangan pesanan dan staf laundry dapat mengelola proses laundry secara terstruktur.
+- **Pelanggan:** melihat status dan perkembangan pesanan laundry miliknya.
+- **Staf Laundry:** memperbarui status pesanan sesuai tugas operasionalnya.
+- **Pemilik Laundry (Admin):** memantau dan memperbarui status pesanan sesuai hak aksesnya.
+
+## 4. Fitur Utama
+
+### 4.1 Pembaruan Status Pesanan
+
+Sistem memungkinkan staf laundry dan pemilik laundry memperbarui informasi status pesanan sesuai hak akses masing-masing.
+
+### 4.2 Pemantauan Status Pesanan
+
+Sistem menyediakan informasi status pesanan agar staf dan pemilik laundry dapat memantau perkembangan pesanan yang dikelola.
+
+### 4.3 Informasi Status untuk Pelanggan
+
+Sistem memungkinkan pelanggan melihat status terkini dari pesanan laundry miliknya melalui sistem Lavora.
+
+### 4.4 Penyimpanan Informasi Status
+
+Sistem menyimpan informasi status pesanan yang diperbarui agar informasi perkembangan pesanan dapat ditampilkan secara konsisten kepada pengguna yang memiliki hak akses.
+
+## 5. Aturan Bisnis
+
+1. Pengguna harus masuk sebelum mengakses fitur pelacakan status yang memerlukan autentikasi.
+2. Pembaruan status pesanan hanya dapat dilakukan oleh staf laundry atau pemilik laundry yang memiliki hak akses.
+3. Pelanggan hanya dapat melihat status pesanan miliknya sendiri.
+4. Informasi status yang ditampilkan harus sesuai dengan data pesanan yang tersimpan dalam sistem.
+5. Pembaruan status harus merujuk pada pesanan yang benar.
+6. Pengguna hanya dapat melakukan tindakan terkait status pesanan sesuai dengan perannya dalam sistem.
+
+## 6. Ketergantungan dengan Modul Lain
+
+- [Modul 1 — Autentikasi dan Pengaturan Hak Akses](01-authentication-access-control.md): menyediakan identitas pengguna dan pembatasan hak akses untuk melihat serta memperbarui status pesanan.
+- [Modul 2 — Pengelolaan Pesanan](02-order-management.md): menyediakan data pesanan yang diperlukan untuk menampilkan dan memperbarui informasi status laundry.
+
+Modul ini mendukung pengelolaan pesanan dengan menyediakan informasi perkembangan status yang dapat dipantau oleh pengguna sesuai hak aksesnya.
