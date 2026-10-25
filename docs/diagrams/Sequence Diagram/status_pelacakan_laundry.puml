@@ -1,0 +1,29 @@
+@startuml
+title Sequence Diagram M04 - Staf Memperbarui Status Pesanan
+
+actor "Staf Laundry" as Staf
+participant "Antarmuka Lavora" as UI
+participant "M04 Laundry Status Tracking" as M04
+participant "M01 Authentication & Access Control" as M01
+participant "M02 Order Management" as M02
+participant "M06 Customer Notification" as M06
+
+Staf -> UI : Pilih pesanan dan status baru
+UI -> M04 : perbaruiStatus(orderId, statusBaru)
+M04 -> M01 : verifikasiHakAkses(sesi)
+M01 --> M04 : akses valid
+M04 -> M02 : ambilPesanan(orderId)
+M02 --> M04 : data pesanan dan status saat ini
+M04 -> M04 : validasiUrutanStatus
+
+alt urutan status valid
+    M04 -> M04 : simpanStatus dan catatRiwayat
+    M04 -> M06 : buatNotifikasi(orderId, statusBaru)
+    M06 --> M04 : notifikasi dibuat
+    M04 --> UI : status berhasil diperbarui
+    UI --> Staf : tampilkan konfirmasi
+else urutan status tidak valid
+    M04 --> UI : perubahan ditolak
+    UI --> Staf : tampilkan pesan error
+end
+@enduml
