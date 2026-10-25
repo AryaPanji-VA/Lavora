@@ -1,109 +1,63 @@
 # Modul 1 — Autentikasi dan Pengaturan Hak Akses
 
-## 1. Gambaran Umum Modul
-
-**Nama Modul:** Autentikasi dan Pengaturan Hak Akses
+## 1. Gambaran Umum
 
 **ID Modul:** M01
 
-**Deskripsi:**
+Modul ini bertanggung jawab untuk memverifikasi identitas pengguna dan mengatur hak akses berdasarkan peran dalam sistem Lavora. Modul ini memastikan bahwa pelanggan, staf laundry, dan pemilik laundry hanya dapat mengakses fitur sesuai tanggung jawabnya.
 
-Modul Autentikasi dan Pengaturan Hak Akses bertanggung jawab untuk memverifikasi identitas pengguna dan mengatur hak akses berdasarkan peran masing-masing pengguna dalam sistem Lavora. Modul ini memastikan bahwa pelanggan, staf laundry, dan pemilik laundry hanya dapat mengakses fitur yang sesuai dengan tanggung jawab mereka.
+## 2. Tujuan
 
-## 2. Tujuan Modul
-
-Modul ini bertujuan untuk:
-- Memungkinkan pengguna masuk ke sistem menggunakan akun yang terdaftar.
-- Memfasilitasi pendaftaran akun pelanggan secara mandiri.
-- Memastikan akun staf mendapatkan persetujuan pemilik sebelum memperoleh hak akses staf.
-- Memverifikasi identitas pengguna sebelum memberikan akses ke fitur yang dilindungi.
-- Membatasi akses fitur berdasarkan peran pengguna.
-- Menyediakan fitur keluar dari akun untuk mengakhiri sesi pengguna.
+- Memungkinkan pengguna masuk dan keluar dari sistem.
+- Memfasilitasi pendaftaran akun pelanggan.
+- Mengatur hak akses berdasarkan peran pengguna.
+- Memastikan akun staf memperoleh persetujuan pemilik sebelum mendapatkan hak akses staf.
 
 ## 3. Aktor
 
-### 3.1 Pelanggan
+- **Pelanggan:** mendaftar, masuk, dan mengakses fitur pelanggan.
+- **Staf Laundry:** masuk dan mengakses fitur operasional sesuai hak aksesnya.
+- **Pemilik Laundry:** masuk, menyetujui akun staf, dan menetapkan hak aksesnya.
 
-- Mendaftarkan akun secara mandiri.
-- Masuk ke sistem menggunakan informasi akun yang terdaftar.
-- Mengakses fitur yang diperuntukkan bagi pelanggan.
-
-### 3.2 Staf Laundry
-
-- Masuk menggunakan akun staf yang telah disetujui oleh pemilik laundry.
-- Mengakses fitur operasional laundry sesuai dengan hak aksesnya.
-
-### 3.3 Pemilik Laundry
-
-- Masuk menggunakan akun pemilik yang disiapkan melalui konfigurasi awal sistem.
-- Menyetujui pendaftaran akun staf dan menetapkan hak aksesnya.
-- Mengakses fitur pengelolaan dan pengawasan sesuai tanggung jawabnya.
+Akun pemilik disiapkan melalui konfigurasi awal sistem, bukan melalui pendaftaran publik.
 
 ## 4. Fitur Utama
 
-### 4.1 Pendaftaran Akun Pelanggan
+### 4.1 Pendaftaran Pelanggan
+Sistem memungkinkan pelanggan membuat akun dan memvalidasi informasi yang diperlukan untuk mencegah akun duplikat.
 
-Sistem memungkinkan pelanggan membuat akun dengan mengisi informasi yang diperlukan. Sistem memvalidasi data pendaftaran dan mencegah penggunaan identitas akun yang sudah terdaftar, seperti alamat email yang sama.
-
-### 4.2 Masuk ke Sistem
-
-Sistem memverifikasi informasi akun yang dimasukkan pengguna. Jika informasi tersebut valid dan status akun memenuhi persyaratan, sistem memberikan akses sesuai dengan peran pengguna.
+### 4.2 Masuk dan Keluar Sistem
+Sistem memverifikasi informasi akun sebelum memberikan akses. Pengguna dapat keluar untuk mengakhiri sesi aktif.
 
 ### 4.3 Persetujuan Akun Staf
+Akun yang mengajukan akses sebagai staf harus disetujui oleh pemilik sebelum memperoleh hak akses staf.
 
-Akun yang mengajukan akses sebagai staf tidak langsung memperoleh hak akses staf. Pemilik laundry harus menyetujui akun tersebut dan menetapkan perannya sebelum akun dapat mengakses fitur operasional staf.
-
-### 4.4 Pengaturan Hak Akses Berdasarkan Peran
-
-Sistem membatasi akses fitur berdasarkan peran pengguna:
-- **Pelanggan:** melihat dan mengelola pesanan miliknya sendiri serta mengakses informasi yang berkaitan dengan pesanan tersebut.
-- **Staf Laundry:** menjalankan kegiatan operasional yang diizinkan untuk peran staf.
-- **Pemilik Laundry:** mengakses fitur pengelolaan dan pengawasan sesuai tanggung jawabnya.
-
-### 4.5 Pengelolaan Sesi dan Keluar dari Akun
-
-Sistem mempertahankan sesi pengguna selama pengguna masuk ke sistem. Pengguna dapat keluar dari akun untuk mengakhiri sesi sehingga sesi tersebut tidak dapat digunakan kembali untuk mengakses fitur yang dilindungi.
+### 4.4 Pengaturan Hak Akses
+Sistem membatasi akses fitur berdasarkan peran:
+- Pelanggan hanya dapat mengakses pesanan miliknya.
+- Staf dapat menjalankan fungsi operasional yang diizinkan.
+- Pemilik dapat mengakses fungsi pengelolaan dan pengawasan sesuai perannya.
 
 ## 5. Aturan Bisnis
 
-1. Pengguna harus masuk ke sistem sebelum mengakses fitur yang memerlukan autentikasi.
-2. Pelanggan dapat mendaftarkan akun secara mandiri.
-3. Akun yang belum mendapatkan persetujuan tidak boleh memperoleh hak akses staf.
-4. Hanya pemilik laundry yang berwenang menyetujui akun staf dan menetapkan perannya.
-5. Akun pemilik disiapkan melalui konfigurasi awal sistem dan tidak dapat dibuat melalui pendaftaran publik sebagai pemilik.
-6. Pengguna hanya dapat mengakses fitur yang sesuai dengan perannya.
-7. Pelanggan hanya dapat melihat dan mengelola pesanan miliknya sendiri.
-8. Staf hanya dapat menjalankan tindakan yang diizinkan untuk peran staf.
-9. Pemilik memiliki hak akses pengelolaan sesuai tanggung jawabnya.
-10. Keluar dari akun harus mengakhiri sesi pengguna yang sedang aktif.
+1. Pengguna harus masuk sebelum mengakses fitur yang memerlukan autentikasi.
+2. Pelanggan dapat mendaftar secara mandiri.
+3. Akun staf harus disetujui oleh pemilik sebelum mendapatkan hak akses staf.
+4. Akun pemilik dibuat melalui konfigurasi awal sistem.
+5. Pengguna hanya dapat mengakses fitur sesuai perannya.
+6. Pelanggan tidak boleh melihat atau mengubah pesanan milik pelanggan lain.
 
 ## 6. Masukan dan Keluaran
 
 | Masukan | Keluaran |
 |---|---|
-| Data pendaftaran pelanggan | Akun berhasil dibuat atau pesan kesalahan validasi |
-| Informasi akun untuk masuk | Hasil verifikasi dan akses ke sistem jika berhasil |
-| Status persetujuan akun staf | Hak akses staf aktif atau tetap tidak aktif |
-| Peran pengguna | Hak akses sesuai dengan peran |
-| Permintaan keluar dari akun | Sesi pengguna berakhir |
+| Data pendaftaran pelanggan | Akun berhasil dibuat atau pesan kesalahan |
+| Informasi akun untuk masuk | Hasil verifikasi dan akses jika berhasil |
+| Persetujuan pemilik atas akun staf | Hak akses staf diberikan |
+| Permintaan keluar | Sesi pengguna diakhiri |
 
 ## 7. Ketergantungan dengan Modul Lain
 
-- **[Modul 02 Pengelolaan Pesanan:](02-order-management.md)** menyediakan pembatasan akses agar pelanggan hanya dapat mengakses pesanan miliknya.
-- **[Modul 03 Perhitungan Biaya:](03-pricing-cost-calculation.md)** memastikan akses terhadap informasi dan fitur terkait biaya sesuai dengan hak akses pengguna.
-- **[Modul 04 Pelacakan Status Laundry:](04-laundry-status-tracking.md)** memastikan pembaruan status hanya dapat dilakukan oleh pengguna yang berwenang.
-- **[Modul 05 Pengelolaan Pembayaran:](05-payment-management.md)** membatasi akses terhadap pencatatan dan informasi pembayaran berdasarkan peran.
-- **[Modul 06 Pengelolaan Pengambilan dan Pengantaran:](06-pickup-delivery-management.md)** membatasi akses terhadap informasi pengambilan dan pengiriman berdasarkan peran.
-- **[Modul 07 Pengelolaan Notifikasi:](07-customer-notification.md)** menggunakan informasi pengguna dan pesanan untuk menentukan penerima notifikasi.
+- [Modul 2 — Pengelolaan Pesanan](02-order-management.md): menyediakan identitas pengguna dan pembatasan akses saat pesanan dibuat atau dilihat.
 
-## 8. Batasan Modul
-
-Modul ini tidak bertanggung jawab atas:
-- Pengelolaan detail pesanan laundry.
-- Perhitungan biaya layanan.
-- Pencatatan dan pengelolaan pembayaran.
-- Pembaruan status pencucian.
-- Pengelolaan informasi pengambilan dan pengantaran.
-- Pengiriman notifikasi kepada pelanggan.
-
-Fungsi-fungsi tersebut menjadi tanggung jawab modul Lavora lainnya.
+Modul lain dapat menerapkan pemeriksaan hak akses sesuai kebutuhannya, tetapi tidak semuanya menjadi ketergantungan langsung modul ini.
