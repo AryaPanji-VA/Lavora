@@ -33,7 +33,7 @@ Pelanggan dapat melihat detail pesanan miliknya, sedangkan staf dan pemilik dapa
 ### 4.4 Pengelolaan Pesanan oleh Staf
 Staf dapat memeriksa pesanan yang masuk dan memperbarui detail pesanan apabila diperlukan sesuai kewenangannya.
 
-## 5. Aturan Bisnis
+## 5. Aturan Modul
 
 1. Pelanggan harus masuk ke sistem sebelum membuat pesanan.
 2. Setiap pesanan harus terhubung dengan satu pelanggan.

@@ -38,7 +38,7 @@ Sistem membatasi akses fitur berdasarkan peran:
 - Staf dapat menjalankan fungsi operasional yang diizinkan.
 - Pemilik dapat mengakses fungsi pengelolaan dan pengawasan sesuai perannya.
 
-## 5. Aturan Bisnis
+## 5. Aturan Modul
 
 1. Pengguna harus masuk sebelum mengakses fitur yang memerlukan autentikasi.
 2. Pelanggan dapat mendaftar secara mandiri.
