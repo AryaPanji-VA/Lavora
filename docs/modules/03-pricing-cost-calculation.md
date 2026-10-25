@@ -1,28 +1,58 @@
-# Modul : Pricing & Cost Calculation
+# Modul 3 — Perhitungan Harga dan Biaya
 
-**Tanggung Jawab :**  
-Modul ini bertanggung jawab menghitung total biaya layanan laundry berdasarkan berat cucian dan tarif per kilogram yang telah ditentukan oleh pemilik laundry. Modul ini juga memastikan perhitungan harga dilakukan secara akurat dan hasilnya dapat digunakan dalam pencatatan pesanan pelanggan.
+## 1. Gambaran Umum
 
-**Data :**
-- Berat Cucian (`weight_kg`)
-- Tarif per Kilogram (`price_per_kg`)
-- Total Harga (`total_price`)
+**ID Modul:** M03
 
-**Aturan :**
-- Berat cucian harus berupa angka yang valid dan lebih besar dari nol.
-- Tarif per kilogram ditentukan dan dikelola oleh pemilik laundry.
-- Sistem menghitung total harga berdasarkan berat cucian dikalikan tarif per kilogram.
-- Tarif yang digunakan dalam perhitungan harus sesuai dengan tarif yang berlaku.
-- Jika berat cucian atau tarif tidak valid, sistem harus menolak perhitungan dan memberikan pesan kesalahan.
-- Total harga yang dihasilkan digunakan sebagai rincian biaya pada pesanan pelanggan.
-- Pelanggan dapat melihat rincian harga, sedangkan staf menggunakan hasil perhitungan untuk membantu pencatatan pesanan.
-- Perubahan tarif hanya dapat dilakukan oleh pemilik laundry sesuai dengan hak akses yang ditentukan.
+Modul ini bertanggung jawab untuk menghitung biaya layanan laundry berdasarkan berat cucian dan tarif per kilogram yang ditetapkan oleh pemilik laundry. Modul ini mengelompokkan pengaturan tarif dan perhitungan biaya karena keduanya berkaitan langsung dengan penentuan harga pesanan. Modul ini memastikan pelanggan dapat mengetahui biaya laundry berdasarkan data pesanan yang dimasukkan ke dalam sistem Lavora.
 
-**Hubungan antar Modul :**
-- `02-order-management.md` : menerima hasil perhitungan total harga untuk disimpan sebagai bagian dari data pesanan laundry.
-- `05-payment-management.md` : menggunakan total harga yang tercatat pada pesanan sebagai dasar pencatatan pembayaran pelanggan.
-- `01-authentication-access-control.md` : memastikan hak akses pengguna sesuai dengan perannya, terutama ketika pemilik laundry mengelola tarif layanan.
+## 2. Tujuan
 
-**Alasan Pengelompokan :**  
-Fitur pengelolaan tarif, validasi berat cucian, dan perhitungan total harga memiliki tujuan yang sama, yaitu memastikan biaya layanan laundry dihitung secara akurat dan konsisten. 
-Oleh karena itu, fitur-fitur tersebut dikelompokkan dalam satu modul agar proses perhitungan harga terpusat, mudah dikelola oleh pemilik laundry, dan dapat diuji melalui fungsi `calculate_price(weight_kg, price_per_kg)`.
+- Memungkinkan pemilik laundry menetapkan tarif layanan laundry.
+- Memfasilitasi staf laundry dalam memasukkan dan memeriksa berat cucian.
+- Menghitung total biaya laundry berdasarkan berat cucian dan tarif yang berlaku.
+- Memungkinkan pelanggan melihat biaya pesanan laundry.
+
+## 3. Aktor
+
+- **Pelanggan:** melihat biaya pesanan laundry.
+- **Staf Laundry:** memasukkan dan memeriksa berat cucian untuk perhitungan biaya.
+- **Pemilik Laundry (Admin):** menetapkan dan mengelola tarif layanan laundry.
+
+## 4. Fitur Utama
+
+### 4.1 Pengaturan Tarif Laundry
+
+Sistem memungkinkan pemilik laundry menetapkan tarif layanan per kilogram yang digunakan sebagai dasar perhitungan biaya pesanan.
+
+### 4.2 Penginputan Berat Cucian
+
+Sistem memungkinkan staf laundry memasukkan dan memeriksa berat cucian sebagai dasar perhitungan biaya laundry.
+
+### 4.3 Perhitungan Total Biaya
+
+Sistem menghitung total biaya laundry berdasarkan berat cucian dan tarif per kilogram yang berlaku.
+
+Rumus perhitungan:
+
+**Total Biaya = Berat Cucian × Tarif per Kilogram**
+
+### 4.4 Informasi Biaya Pesanan
+
+Sistem menampilkan informasi biaya laundry kepada pelanggan agar pelanggan dapat mengetahui biaya pesanan yang tercatat dalam sistem.
+
+## 5. Aturan Bisnis
+
+1. Tarif layanan laundry ditetapkan oleh pemilik laundry.
+2. Berat cucian digunakan sebagai dasar perhitungan biaya laundry.
+3. Total biaya dihitung berdasarkan berat cucian dikalikan tarif per kilogram yang berlaku.
+4. Perhitungan biaya harus menggunakan data berat dan tarif yang sesuai dengan pesanan.
+5. Pelanggan hanya dapat melihat informasi biaya dari pesanan miliknya.
+6. Pengelolaan tarif hanya dapat dilakukan oleh pengguna yang memiliki hak akses pemilik laundry.
+
+## 6. Ketergantungan dengan Modul Lain
+
+- [Modul 1 — Autentikasi dan Pengaturan Hak Akses](01-authentication.md): menyediakan identitas pengguna dan pembatasan hak akses untuk pengelolaan tarif serta informasi biaya.
+- [Modul 2 — Pengelolaan Pesanan](02-order-management.md): menyediakan data pesanan yang diperlukan dalam proses perhitungan dan penyimpanan biaya laundry.
+
+Modul ini mendukung proses pengelolaan pesanan dengan menyediakan perhitungan biaya berdasarkan berat cucian dan tarif yang berlaku.
