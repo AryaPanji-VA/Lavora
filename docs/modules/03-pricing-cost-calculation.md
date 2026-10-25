@@ -1,4 +1,4 @@
-# Modul : Perhitungan Harga dan Biaya (Pricing & Cost Calculation)
+# Modul : Pricing & Cost Calculation
 
 **Tanggung Jawab :**  
 Modul ini bertanggung jawab menghitung total biaya layanan laundry berdasarkan berat cucian dan tarif per kilogram yang telah ditentukan oleh pemilik laundry. Modul ini juga memastikan perhitungan harga dilakukan secara akurat dan hasilnya dapat digunakan dalam pencatatan pesanan pelanggan.
