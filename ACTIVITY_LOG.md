@@ -4,9 +4,9 @@ Log ini mencatat kontribusi setiap anggota selama pengerjaan proyek. Setiap akti
 
 | Date | Member | Deliverable | What Was Done | Time Spent | Commit / PR |
 |---|---|---|---|---|---|
-| YYYY-MM-DD | [Nama anggota 1] (@username) | D1 | [Deskripsi pekerjaan] | [45 min] | [Commit hash / PR link] |
-| YYYY-MM-DD | [Nama anggota 2] (@username) | D2 | [Deskripsi pekerjaan] | [1 hour] | [Commit hash / PR link] |
-| YYYY-MM-DD | [Nama anggota 3] (@username) | D3 | [Deskripsi pekerjaan] | [30 min] | [Commit hash / PR link] |
+| 2026-10-25 | [Arya Panji] (AryaPanji-VA)  | D1 | [Menentukan topic/problem statement] | [1 hour] | [221531f] |
+| YYYY-MM-DD | [Nama anggota 2] (@username) | D2 | [Deskripsi pekerjaan]                | [1 hour] | [Commit hash / PR link] |
+| YYYY-MM-DD | [Nama anggota 3] (@username) | D3 | [Deskripsi pekerjaan]                | [30 min] | [Commit hash / PR link] |
 
 ## Notes
 
