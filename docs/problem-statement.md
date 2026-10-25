@@ -39,7 +39,7 @@ Staf laundry menggunakan Lavora untuk:
 - Menyiapkan pesanan untuk diambil pelanggan atau diserahkan kepada layanan pengiriman eksternal.
 - Mencatat informasi pengiriman yang diperlukan dalam pesanan.
 
-### 3.3 Pemilik Laundry (*Laundry Owner*)
+### 3.3 Pemilik Laundry (*Laundry Owner/Admin*)
 
 Pemilik laundry menggunakan Lavora untuk:
 - Login ke sistem menggunakan akun pemilik.
