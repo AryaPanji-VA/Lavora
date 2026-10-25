@@ -10,7 +10,7 @@ Log ini mencatat kontribusi setiap anggota selama pengerjaan proyek. Setiap akti
 | 2026-10-25 | [Aryasatya Mu'adz Ramadhan] (aryasatyamr) | D2 | [Mengerjakan module 05]                | [35 min] | [8b6a582] |
 | 2026-10-25 | [Aryasatya Mu'adz Ramadhan] (aryasatyamr) | D2 | [Mengerjakan module 07]                | [30 min] | [f4b11a3] |
 | 2026-10-25 | [Arya Panji] (AryaPanji-VA) | D2 | [Mengerjakan module 06/Pull Request]                | [30 min] | [Add Module 6 - Pickup and Delivery- #1] |
-
+| 2026-10-25 | [Arya Panji] (AryaPanji-VA) | D2 | [Update Dependencies M01]             | [10 min] | [af7659f] |
 ## Notes
 
 - Setiap anggota mengisi aktivitasnya sendiri.
