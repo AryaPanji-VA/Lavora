@@ -41,4 +41,4 @@ Pelanggan dapat memilih jenis notifikasi pesanan yang ingin diterima.
 - **[Modul 4 — Laundry Status Tracking:](04-laundry-status-tracking.md)** menyediakan informasi perubahan status yang menjadi pemicu notifikasi.
 - **[Modul 2 — Order Management:](02-order-management.md)** menyediakan data pesanan, metode pengambilan, dan pelanggan penerima notifikasi.
 - **[Modul 1 — Authentication & Access Control:](01-authentication-access-control.md)** memastikan notifikasi hanya tampil di akun pelanggan yang bersangkutan.
-- **[Modul 6 — Pengelolaan Pengambilan dan Pengantaran:](06-pickup-delivery-management.md)** menyediakan informasi metode penyerahan dan status penyerahan laundry yang dapat memicu notifikasi kepada pelanggan.
+- **[Modul 6 — Pickup & Delivery Management:](06-pickup-delivery-management.md)** menyediakan informasi metode penyerahan dan status penyerahan laundry yang dapat memicu notifikasi kepada pelanggan.
