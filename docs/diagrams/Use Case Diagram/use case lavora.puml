@@ -1,0 +1,78 @@
+@startuml
+title Use Case Diagram - Sistem Lavora
+
+left to right direction
+skinparam dpi 160
+skinparam defaultFontName Arial
+skinparam shadowing false
+skinparam nodesep 30
+skinparam ranksep 90
+skinparam usecase {
+  BackgroundColor #FFFFFF
+  BorderColor #455A64
+}
+skinparam rectangle {
+  BackgroundColor #FAFAFA
+  BorderColor #2E5E4E
+}
+
+actor "Pelanggan\n(Customer)" as Pel
+actor "Staf Laundry\n(Laundry Staff)" as Staf
+actor "Pemilik Laundry\n(Laundry Owner)" as Pem
+
+rectangle "Sistem Lavora" {
+  usecase "Registrasi Akun Mandiri\n[M01]" as UC1
+  usecase "Otentikasi / Login\n[M01]" as UC2
+  usecase "Setujui Akun Staf\n[M01]" as UC14
+
+  usecase "Membuat Pesanan Laundry\n[M02]" as UC3
+  usecase "Membatalkan Pesanan\n[M02]" as UC16
+  usecase "Lihat Rincian & Riwayat Pesanan\n[M02]" as UC5
+
+  usecase "Input Berat & Hitung Biaya\n[M03]" as UC8
+  usecase "Kelola Tarif Layanan\n[M03]" as UC13
+
+  usecase "Lacak Status Cucian\n[M04]" as UC6
+  usecase "Perbarui Status Laundry\n[M04]" as UC9
+
+  usecase "Catat Pembayaran Offline\n[M05]" as UC11
+  usecase "Awasi Pembayaran & Operasional\n[M05]" as UC15
+
+  usecase "Pilih Metode Ambil / Antar\n[M06]" as UC4
+  usecase "Catat Serah Terima Cucian\n[M06]" as UC12
+  usecase "Serah Terima ke Kurir Eksternal\n[M06]" as UC17
+
+  usecase "Lihat Notifikasi Pesanan\n[M07]" as UC7
+  usecase "Kirim Notifikasi Otomatis\n[M07]" as UC10
+}
+
+' Pelanggan
+Pel --> UC1
+Pel --> UC2
+Pel --> UC3
+Pel --> UC5
+Pel --> UC6
+Pel --> UC7
+
+' Staf Laundry
+Staf --> UC2
+Staf --> UC8
+Staf --> UC9
+Staf --> UC11
+Staf --> UC12
+
+' Pemilik Laundry
+Pem --> UC2
+Pem --> UC6
+Pem --> UC13
+Pem --> UC14
+Pem --> UC15
+
+' Relasi include
+UC3 ..> UC4 : <<include>>
+UC9 ..> UC10 : <<include>>
+
+' Relasi extend (dari use case tambahan ke use case utama)
+UC16 ..> UC3 : <<extend>>
+UC17 ..> UC12 : <<extend>>
+@enduml
