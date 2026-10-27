@@ -2,8 +2,6 @@
 
 Lavora dipecah menjadi **7 modul**. Setiap modul punya satu tanggung jawab utama, dan fitur-fitur di dalamnya dikelompokkan karena melayani tujuan yang sama. Dokumen ini merangkum semuanya dalam satu tempat; penjelasan rinci tiap modul ada di folder [`modules/`](modules/).
 
-> Catatan: pembagian menjadi 7 modul telah disetujui oleh dosen pengampu.
-
 ## 1. Ringkasan Modul
 
 | ID | Modul | Tanggung jawab | Detail |
