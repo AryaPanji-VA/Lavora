@@ -22,7 +22,7 @@ Log ini mencatat kontribusi setiap anggota selama pengerjaan proyek. Setiap akti
 | 2026-10-27 | [Aryasatya Mu'adz Ramadhan] (aryasatyamr) | D3 | [Revisi Use Case .png]                | [43 min] | [2b659be](https://github.com/AryaPanji-VA/Lavora/commit/2b659be) |
 | 2026-10-27 | [Aryasatya Mu'adz Ramadhan] (aryasatyamr) | D3 | [Mengupdate Use Case .puml]                | [43 min] | [51eecd3](https://github.com/AryaPanji-VA/Lavora/commit/51eecd3) |
 | 2026-10-27 | [Aryasatya Mu'adz Ramadhan] (aryasatyamr) | D3 | [Mengerjakan README.md untuk use case]                | [24 min] | [7cbf9bf](https://github.com/AryaPanji-VA/Lavora/commit/7cbf9bf) |
-
+| 2026-10-27 | [Bernardus_Rionard_L.S] (Rionard956) | D4 | [Mengerjakan README.md untuk Sequence Diagrams]      | [25 min] | [db51b5b](https://github.com/AryaPanji-VA/Lavora/commit/db51b5b) |
 ## Notes
 
 - Setiap anggota mengisi aktivitasnya sendiri.
