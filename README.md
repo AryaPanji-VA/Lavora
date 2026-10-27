@@ -8,9 +8,9 @@ Lavora dibuat untuk usaha laundry skala kecil yang masih memakai nota tulis tang
 
 | Nama | NIM | GitHub |
 |---|---|---|
-| Arya Panji Vici Ayanda | `<NIM>` | [@AryaPanji-VA](https://github.com/AryaPanji-VA) |
-| Aryasatya Mu'adz Ramadhan | `<NIM>` | [@aryasatyamr](https://github.com/aryasatyamr) |
-| Bernardus Rionard L.S | `<NIM>` | [@Rionard956](https://github.com/Rionard956) |
+| Arya Panji Vici Ayanda | `26110300014 ` | [@AryaPanji-VA](https://github.com/AryaPanji-VA) |
+| Aryasatya Mu'adz Ramadhan | `26110300003` | [@aryasatyamr](https://github.com/aryasatyamr) |
+| Bernardus Rionard L.S | `26110300017` | [@Rionard956](https://github.com/Rionard956) |
 
 ## Deliverables
 
@@ -84,10 +84,12 @@ Konfigurasi pytest ada di [`pytest.ini`](pytest.ini): `testpaths = test` dan `py
 
 | Alat | Kegunaan | Ditinjau oleh |
 |---|---|---|
-| Hermes Agent (Belajo) | Menyusun draf struktur repo, menulis draf dokumen D2–D6, dan memeriksa konsistensi link antar dokumen serta hasil test | Arya Panji — seluruh isi dibaca ulang dan diverifikasi terhadap kode dan diagram |
+| Hermes Agent (Model: Gemini)| Membantu susun Diagram dan memeriksa konsistensi link antar dokumen serta hasil test, dan Menyusun pytest | Arya Panji |
+| Chatgpt dan Claude | Membantu menyusun kalimat di Dokumentasi, Membuat Diagram, dan check inkonsistensi doc yang di buat sebelum commit | Bernardus Rionard |
+| Claude | Membantu menyusun kalimat di Dokumentasi, Membuat Diagram, serta Menyusun ide, dan revisi inkonsistensi doc yang dibuat | Aryasatya Mu'adz Ramadhan |
 
 Seluruh isi dokumen dan kode di repo ini diperiksa manual: setiap klaim di dokumen dicocokkan dengan file yang dirujuk, dan unit test dijalankan ulang sebelum diserahkan.
 
 ## Kontribusi
 
-Aturan kerja tim, konvensi commit, dan cara render ulang diagram dijelaskan di [`ACTIVITY_LOG.md`](ACTIVITY_LOG.md) bagian Notes. Setiap entri di log menunjuk ke commit atau pull request yang bisa diperiksa di GitHub.
+Aturan kerja tim dan konvensi commit dijelaskan di [`ACTIVITY_LOG.md`](ACTIVITY_LOG.md) bagian Notes. Setiap entri di log menunjuk ke commit atau pull request yang bisa diperiksa di GitHub.
