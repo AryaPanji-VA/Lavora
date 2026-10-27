@@ -21,8 +21,8 @@ Lavora dibuat untuk usaha laundry skala kecil yang masih memakai nota tulis tang
 | D3 | Use Case Diagram | [`docs/D3-Use-Case.md`](docs/D3-Use-Case.md) | [PNG](docs/diagrams/Use%20Case%20Diagram/use%20case%20lavora.png) · [PlantUML](docs/diagrams/Use%20Case%20Diagram/use%20case%20lavora.puml) |
 | D4 | Sequence Diagrams | [`docs/D4-Sequence-Diagrams.md`](docs/D4-Sequence-Diagrams.md) | [SD1](docs/diagrams/Sequence%20Diagram/sd1-login-pemesanan.puml) · [SD2](docs/diagrams/Sequence%20Diagram/SD2-Pemrosesan%20Laundry%20dan%20Pembaruan%20Status.puml) · [SD3](docs/diagrams/Sequence%20Diagram/SD3%20-%20Pembayaran%20dan%20Serah%20Terima%20Pesanan.puml) |
 | D5 | Collaboration | [`ACTIVITY_LOG.md`](ACTIVITY_LOG.md) | [`README.md`](README.md) (file ini) |
-| D6 | Test Case Design | [`docs/D6-test-cases.md`](docs/D6-test-cases.md) | [`test/Test_Case_Design.md`](test/Test_Case_Design.md) |
-| D7 | Unit-Tested Code | [`src/pricing.py`](src/pricing.py) | [`test/test_pricing.py`](test/test_pricing.py) · [screenshot](test/screenshot-2026-10-27_19-55-03.png) |
+| D6 | Test Case Design | [`docs/D6-D7-testing.md`](docs/D6-D7-testing.md) | [`test/Test_Case_Design.md`](test/Test_Case_Design.md) |
+| D7 | Unit-Tested Code | [`docs/D6-D7-testing.md`](docs/D6-D7-testing.md) | [`src/pricing.py`](src/pricing.py) · [`test/test_pricing.py`](test/test_pricing.py) · [screenshot](test/screenshot-2026-10-27_19-55-03.png) |
 
 Penjelasan folder test ada di [`test/README.md`](test/README.md).
 
@@ -62,7 +62,7 @@ Konfigurasi pytest ada di [`pytest.ini`](pytest.ini): `testpaths = test` dan `py
 │   ├── D2-modules.md
 │   ├── D3-Use-Case.md
 │   ├── D4-Sequence-Diagrams.md
-│   ├── D6-test-cases.md
+│   ├── D6-D7-testing.md
 │   ├── modules/               # rincian 7 modul
 │   └── diagrams/              # source PlantUML + hasil render PNG
 ├── src/
