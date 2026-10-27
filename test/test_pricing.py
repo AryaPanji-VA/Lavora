@@ -41,7 +41,7 @@ def test_zero_or_negative_weight():
         calculate_laundry_cost(-1.5, "regular")
 
 # TC-09
-def test_invaid_service_type():
+def test_invalid_service_type():
     with pytest.raises(ValueError):
         calculate_laundry_cost(3, "super_fast")
 # TC-10
