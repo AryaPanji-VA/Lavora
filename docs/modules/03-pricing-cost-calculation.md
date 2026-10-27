@@ -27,15 +27,15 @@ Sistem memungkinkan pemilik laundry menetapkan tarif layanan per kilogram yang d
 
 ### 4.2 Penginputan Berat Cucian
 
-Sistem memungkinkan staf laundry memasukkan dan memeriksa berat cucian sebagai dasar perhitungan biaya laundry.
+Setelah cucian diterima, staf laundry menimbang cucian dan memasukkan berat aktualnya ke dalam sistem. Berat aktual tersebut digunakan sebagai dasar perhitungan biaya sesuai tarif layanan yang berlaku.
 
 ### 4.3 Perhitungan Total Biaya
 
-Sistem menghitung total biaya laundry berdasarkan berat cucian dan tarif per kilogram yang berlaku.
+Sistem menghitung total biaya laundry berdasarkan berat aktual cucian yang telah dimasukkan staf dan tarif per kilogram untuk layanan yang dipilih. Hasil perhitungan digunakan sebagai total biaya pesanan dalam M02 agar biaya yang tercatat sesuai dengan data pesanan.
 
 Rumus perhitungan:
 
-**Total Biaya = Berat Cucian × Tarif per Kilogram**
+Total Biaya = Berat Aktual Cucian × Tarif per Kilogram
 
 ### 4.4 Informasi Biaya Pesanan
 
