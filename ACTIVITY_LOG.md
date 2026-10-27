@@ -24,6 +24,7 @@ Log ini mencatat kontribusi setiap anggota selama pengerjaan proyek. Setiap akti
 | 2026-10-27 | [Aryasatya Mu'adz Ramadhan] (aryasatyamr) | D3 | [Mengerjakan README.md untuk use case]                | [24 min] | [7cbf9bf](https://github.com/AryaPanji-VA/Lavora/commit/7cbf9bf) |
 | 2026-10-27 | [Bernardus_Rionard_L.S] (Rionard956) | D4 | [Mengerjakan README.md untuk Sequence Diagrams]      | [25 min] | [db51b5b](https://github.com/AryaPanji-VA/Lavora/commit/db51b5b) |
 | 2026-10-27 | [Arya Panji] (AryaPanji-VA) | D2 | [Membuat dokumentasi keseluruhan D2 (Modules]    | [40 min] | [4d0be8a](https://github.com/AryaPanji-VA/Lavora/commit/4d0be8a9ef974b9808d95a97975bf49cc53c5fba) |
+| 2026-10-27 | [Bernardus_Rionard_L.S] (Rionard956) | D6 | [Update Test Case Design]      | [10 min] | [05da825](https://github.com/AryaPanji-VA/Lavora/commit/05da825) |
 
 ## Notes
 
