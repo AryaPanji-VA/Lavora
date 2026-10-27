@@ -156,3 +156,20 @@ Tanda centang menunjukkan bahwa modul terlibat dalam skenario tersebut, bukan be
 - Pembayaran online dalam ruang lingkup Lavora bersifat konseptual dan bukan integrasi payment gateway nyata.
 - Operasional kurir eksternal berada di luar integrasi langsung Lavora.
 
+## Tiga Skenario Terpenting dan Alasan Pemilihannya
+
+### 1. SD1 — Login dan Pembuatan Pesanan
+
+Skenario ini menjelaskan proses pelanggan masuk ke sistem Lavora dan membuat pesanan laundry. Skenario ini penting karena sistem harus memverifikasi akun pelanggan, menghitung total biaya berdasarkan layanan yang dipilih, dan menyimpan pesanan ke database. Proses ini menjadi tahap awal yang diperlukan sebelum pesanan dapat diproses oleh staf laundry.
+
+### 2. SD2 — Pemrosesan Laundry dan Pembaruan Status
+
+Skenario ini menjelaskan bagaimana staf laundry melihat pesanan masuk, memproses pakaian, dan memperbarui status pengerjaan. Skenario ini penting karena setiap perubahan status perlu tercatat dengan benar agar perkembangan laundry dapat dipantau dan pelanggan dapat menerima informasi terbaru melalui notifikasi.
+
+### 3. SD3 — Pembayaran dan Serah Terima Pesanan
+
+Skenario ini menjelaskan proses pencatatan pembayaran serta pengambilan atau pengantaran pesanan yang telah selesai dikerjakan. Skenario ini penting karena sistem perlu mencatat hasil pembayaran, menyimpan metode serah terima, dan memperbarui status pesanan untuk memastikan proses penyelesaian layanan terdokumentasi dengan baik.
+
+### Kesimpulan
+
+Ketiga skenario ini dipilih karena mewakili alur utama aplikasi Lavora, mulai dari pembuatan pesanan, pemrosesan laundry, hingga pembayaran dan serah terima pesanan. Ketiganya saling berkaitan dalam mendukung proses operasional laundry secara terstruktur, mulai dari pelanggan membuat pesanan sampai layanan selesai.
