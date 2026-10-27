@@ -45,7 +45,7 @@ Staf dapat memeriksa pesanan yang masuk dan memperbarui detail pesanan apabila d
 ## 6. Ketergantungan dengan Modul Lain
 
 - **[Modul 1 — Autentikasi dan Pengaturan Hak Akses:](01-authentication-access-control.md)** memverifikasi identitas pengguna dan memastikan akses pesanan sesuai perannya.
-- **[Modul 3 — Perhitungan Biaya:](03-pricing-cost-calculation)** menghitung biaya berdasarkan detail layanan dan pakaian dalam pesanan.
+- **[Modul 3 — Perhitungan Biaya:](03-pricing-cost-calculation.md)** menghitung biaya berdasarkan detail layanan dan pakaian dalam pesanan.
 - **[Modul 4 — Pelacakan Status Laundry:](04-laundry-status-tracking.md)** mengelola status pengerjaan pesanan.
 - **[Modul 6 — Pengelolaan Pengambilan dan Pengantaran:](06-pickup-delivery-management.md)** mengelola pilihan pengambilan atau pengantaran untuk pesanan yang dibuat.
 
