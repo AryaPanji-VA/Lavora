@@ -19,6 +19,8 @@ Log ini mencatat kontribusi setiap anggota selama pengerjaan proyek. Setiap akti
 | 2026-10-27 | [Bernardus_Rionard_L.S] (Rionard956) | D6 | [Mengerjakan Test Case Design]      | [35 min] | [45de74a](https://github.com/AryaPanji-VA/Lavora/commit/45de74a) |
 | 2026-10-27 | [Arya Panji] (AryaPanji-VA) | D7 | [Membuat test_pricing menggunakan pytest]    | [1 hour] | [8ad594d](https://github.com/AryaPanji-VA/Lavora/commit/8ad594d)/[PR #4](https://github.com/AryaPanji-VA/Lavora/pull/4) |
 | 2026-10-27 | [Arya Panji] (AryaPanji-VA) | D7 | [Menambahkan pytest.ini dan requirements.txt]    | [35 min] | [dd4b794](https://github.com/AryaPanji-VA/Lavora/commit/dd4b794347d878a0359f5bf60df34af333877b20) |
+| 2026-10-27 | [Aryasatya Mu'adz Ramadhan] (aryasatyamr) | D3 | [Revisi Use Case .png]                | [43 min] | [2b659be](https://github.com/AryaPanji-VA/Lavora/commit/2b659be) |
+| 2026-10-27 | [Aryasatya Mu'adz Ramadhan] (aryasatyamr) | D3 | [Mengupdate Use Case .puml]                | [43 min] | [51eecd3](https://github.com/AryaPanji-VA/Lavora/commit/51eecd3) |
 ## Notes
 
 - Setiap anggota mengisi aktivitasnya sendiri.
