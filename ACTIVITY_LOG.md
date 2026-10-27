@@ -14,6 +14,7 @@ Log ini mencatat kontribusi setiap anggota selama pengerjaan proyek. Setiap akti
 | 2026-10-27 | [Arya Panji] (AryaPanji-VA) | D4 | [Mengerjakan SD1 .png dan .puml]      | [25 min] | [1880655], [c171a3d] |
 | 2026-10-27 | [Aryasatya Mu'adz Ramadhan] (aryasatyamr) | D4 | [Mengerjakan SD2 .png dan .puml]                | [42 min] | [d213579] |
 | 2026-10-27 | [Bernardus_Rionard_L.S] (Rionard956) | D4 | [Mengerjakan SD3 .png dan .puml]      | [55 min] | [afd1dac], [3de2023] |
+| 2026-10-27 | [Bernardus_Rionard_L.S] (Rionard956) | D4 | [Menambah PR]     | [2 min] | [SD3 - Pembayaran dan Serah Terima Pesanan- #2] |
 ## Notes
 
 - Setiap anggota mengisi aktivitasnya sendiri.
