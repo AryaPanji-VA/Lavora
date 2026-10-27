@@ -17,6 +17,7 @@ Log ini mencatat kontribusi setiap anggota selama pengerjaan proyek. Setiap akti
 | 2026-10-27 | [Bernardus_Rionard_L.S] (Rionard956) | D4 | [Menambah PR]     | [2 min] | [SD3 - Pembayaran dan Serah Terima Pesanan- #2] |
 | 2026-10-27 | [Aryasatya Mu'adz Ramadhan] (aryasatyamr) | D3 | [Mengerjakan Use Case .png dan .puml]                | [47 min] | [11fecc4] |
 | 2026-10-27 | [Bernardus_Rionard_L.S] (Rionard956) | D6 | [Mengerjakan Test Case Design]      | [35 min] | [45de74a] |
+| 2026-10-27 | [Arya Panji] (AryaPanji-VA) | D7 | [Membuat test_pricing menggunakan pytest]    | [1 hour] | [8ad594d]/[PR #4] |
 ## Notes
 
 - Setiap anggota mengisi aktivitasnya sendiri.
