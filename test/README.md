@@ -61,4 +61,3 @@ Aturan bisnis yang diuji:
 
 **Yang diuji:** perhitungan tarif untuk dua jenis layanan, aturan minimum charge, validasi berat, validasi jenis layanan, validasi tipe data, dan normalisasi input.
 
-**Yang tidak diuji:** tampilan/UI, penyimpanan database, dan proses I/O lain. Sesuai ketentuan D7, fungsi yang diuji adalah satu aturan bisnis murni tanpa efek samping.
