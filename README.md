@@ -24,7 +24,7 @@ Lavora dibuat untuk usaha laundry skala kecil yang masih memakai nota tulis tang
 | D6 | Test Case Design | [`docs/D6-D7-testing.md`](docs/D6-D7-testing.md) | [`test/Test_Case_Design.md`](test/Test_Case_Design.md) |
 | D7 | Unit-Tested Code | [`docs/D6-D7-testing.md`](docs/D6-D7-testing.md) | [`src/pricing.py`](src/pricing.py) · [`test/test_pricing.py`](test/test_pricing.py) · [screenshot](test/screenshot-2026-10-27_19-55-03.png) |
 
-Penjelasan folder test ada di [`test/README.md`](test/README.md).
+Isi folder [`test/`](test/): 10 unit test (`test_pricing.py`), tabel test case (`Test_Case_Design.md`), dan screenshot bukti test lulus. Penjelasan lengkap D6 dan D7 ada di [`docs/D6-D7-testing.md`](docs/D6-D7-testing.md).
 
 ## Cara menjalankan unit test
 
