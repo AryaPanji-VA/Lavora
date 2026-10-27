@@ -1,7 +1,7 @@
 # Modul 7 — Customer Notification
 
 ## 1. Gambaran Umum
-**ID Modul:** M06
+**ID Modul:** M07
 
 **Tanggung jawab:** Modul ini bertanggung jawab untuk memberi tahu pelanggan mengenai perubahan status pesanan melalui mekanisme yang dirancang dalam sistem, sehingga pelanggan tidak perlu menghubungi staf laundry untuk menanyakan perkembangan pesanan.
 
