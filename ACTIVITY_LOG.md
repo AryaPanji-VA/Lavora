@@ -12,7 +12,7 @@ Log ini mencatat kontribusi setiap anggota selama pengerjaan proyek. Setiap akti
 | 2026-10-25 | [Arya Panji] (AryaPanji-VA) | D2 | [Mengerjakan module 06/Pull Request]                | [30 min] | [Add Module 6 - Pickup and Delivery- #1] |
 | 2026-10-25 | [Arya Panji] (AryaPanji-VA) | D2 | [Update Dependencies M01]             | [10 min] | [af7659f] |
 | 2026-10-27 | [Arya Panji] (AryaPanji-VA) | D4 | [Mengerjakan SD1 .png dan .puml]      | [25 min] | [1880655], [c171a3d] |
-| 2026-10-27 | [Aryasatya Mu'adz Ramadhan] (aryasatyamr) | D4 | [Mengerjakan SD2 .png dan .puml]                | [42 min] | [c0b942e] |
+| 2026-10-27 | [Aryasatya Mu'adz Ramadhan] (aryasatyamr) | D4 | [Mengerjakan SD2 .png dan .puml]                | [42 min] | [d213579] |
 | 2026-10-27 | [Bernardus_Rionard_L.S] (Rionard956) | D4 | [Mengerjakan SD3 .png dan .puml]      | [55 min] | [afd1dac], [3de2023] |
 ## Notes
 
