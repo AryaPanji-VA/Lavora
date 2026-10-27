@@ -49,6 +49,4 @@ Sistem membatasi akses fitur berdasarkan peran:
 
 ## 6. Ketergantungan dengan Modul Lain
 
-- [Modul 2 — Pengelolaan Pesanan](02-order-management.md): menyediakan identitas pengguna dan pembatasan akses saat pesanan dibuat atau dilihat.
-
-Modul lain dapat menerapkan pemeriksaan hak akses sesuai kebutuhannya, tetapi tidak semuanya menjadi ketergantungan langsung modul ini.
+Modul ini tidak memiliki ketergantungan langsung pada modul bisnis lain. Modul lain dapat menggunakan layanan autentikasi dan pengaturan hak akses dari M01 untuk memverifikasi identitas pengguna serta membatasi akses sesuai perannya.

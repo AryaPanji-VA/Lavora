@@ -1,7 +1,7 @@
 # Modul 7 — Customer Notification
 
 ## 1. Gambaran Umum
-**ID Modul:** M06
+**ID Modul:** M07
 
 **Tanggung jawab:** Modul ini bertanggung jawab untuk memberi tahu pelanggan mengenai perubahan status pesanan melalui mekanisme yang dirancang dalam sistem, sehingga pelanggan tidak perlu menghubungi staf laundry untuk menanyakan perkembangan pesanan.
 
@@ -22,7 +22,7 @@
 Sistem membuat notifikasi secara otomatis ketika staf laundry memperbarui status pesanan.
 
 ### 4.2 Notifikasi Pengambilan atau Pengantaran
-Sistem memberi notifikasi khusus ketika cucian siap diambil atau sudah diserahkan kepada layanan pengiriman eksternal.
+Sistem membuat notifikasi ketika cucian siap diambil atau ketika staf mencatat bahwa laundry telah diserahkan kepada kurir layanan pengiriman eksternal. Notifikasi dibuat berdasarkan perubahan status atau peristiwa yang tercatat dalam sistem Lavora.
 
 ### 4.3 Daftar Notifikasi
 Pelanggan dapat melihat daftar notifikasi di akunnya dan menandai notifikasi sebagai sudah dibaca.
@@ -41,3 +41,4 @@ Pelanggan dapat memilih jenis notifikasi pesanan yang ingin diterima.
 - **[Modul 4 — Laundry Status Tracking:](04-laundry-status-tracking.md)** menyediakan informasi perubahan status yang menjadi pemicu notifikasi.
 - **[Modul 2 — Order Management:](02-order-management.md)** menyediakan data pesanan, metode pengambilan, dan pelanggan penerima notifikasi.
 - **[Modul 1 — Authentication & Access Control:](01-authentication-access-control.md)** memastikan notifikasi hanya tampil di akun pelanggan yang bersangkutan.
+- **[Modul 6 — Pickup & Delivery Management:](06-pickup-delivery-management.md)** menyediakan informasi metode penyerahan dan status penyerahan laundry yang dapat memicu notifikasi kepada pelanggan.

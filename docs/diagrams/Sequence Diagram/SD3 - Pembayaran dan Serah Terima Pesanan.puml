@@ -1,0 +1,50 @@
+
+@startuml
+title SD3 - Pembayaran dan Serah Terima Pesanan
+
+actor Pelanggan
+actor "Staf Laundry" as Staf
+participant "Halaman Lavora" as UI
+participant "M01 - Autentikasi" as M01
+participant "M02 - Pengelolaan Pesanan" as M02
+participant "M04 - Status Laundry" as M04
+participant "M05 - Pembayaran" as M05
+participant "M06 - Serah Terima" as M06
+participant "M07 - Notifikasi" as M07
+participant Database as DB
+
+Staf -> UI: Menyelesaikan laundry
+UI -> M04: Perbarui status
+M04 -> DB: Simpan status
+DB --> M04: Berhasil
+M04 -> M07: Kirim notifikasi
+M07 --> Pelanggan: Informasi laundry selesai
+
+Pelanggan -> UI: Melakukan pembayaran
+UI -> M01: Validasi akses
+M01 --> UI: Akses valid
+UI -> M02: Ambil total biaya
+M02 --> UI: Total biaya
+UI -> M05: Catat pembayaran
+
+alt Pembayaran berhasil
+    M05 -> DB: Simpan pembayaran
+    DB --> M05: Berhasil
+    M05 --> UI: Konfirmasi pembayaran
+
+    Staf -> UI: Memproses serah terima
+    UI -> M06: Catat pengambilan/pengantaran
+    M06 -> DB: Simpan metode serah terima
+    DB --> M06: Berhasil
+
+    M06 -> M04: Perbarui status pesanan
+    M04 -> DB: Simpan status terbaru
+    DB --> M04: Berhasil
+    M04 -> M07: Kirim notifikasi
+    M07 --> Pelanggan: Informasi status terbaru
+else Pembayaran gagal
+    M05 --> UI: Pembayaran gagal
+    UI --> Pelanggan: Tampilkan pesan gagal
+end
+
+@enduml

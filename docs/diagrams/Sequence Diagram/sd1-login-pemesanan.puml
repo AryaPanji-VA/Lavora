@@ -1,0 +1,62 @@
+
+@startuml
+title SD1 - Login dan Pembuatan Pesanan Lavora
+
+actor Pelanggan
+
+boundary "Halaman Lavora" as UI
+participant "M01 - Autentikasi dan Hak Akses" as M01
+participant "M02 - Pengelolaan Pesanan" as M02
+participant "M03 - Perhitungan Biaya" as M03
+database "Database" as DB
+
+== Login Pelanggan ==
+
+Pelanggan -> UI: Membuka halaman login
+UI --> Pelanggan: Menampilkan formulir login
+Pelanggan -> UI: Memasukkan email dan password
+UI -> M01: Mengirim data login
+M01 -> DB: Memeriksa akun
+DB --> M01: Mengembalikan hasil pemeriksaan
+
+alt Akun valid
+    M01 --> UI: Login berhasil
+    UI --> Pelanggan: Menampilkan halaman utama
+else Akun tidak valid
+    M01 --> UI: Login gagal
+    UI --> Pelanggan: Menampilkan pesan kesalahan
+end
+
+== Pembuatan Pesanan ==
+
+Pelanggan -> UI: Mengisi detail pesanan
+UI -> M02: Mengirim detail pesanan
+M02 -> M01: Memverifikasi sesi pelanggan
+
+alt Sesi valid
+    M01 --> M02: Hak akses valid
+
+    M02 -> M03: Meminta perhitungan biaya
+    M03 -> DB: Mengambil harga layanan
+    DB --> M03: Mengembalikan data harga
+    M03 --> M02: Mengembalikan total biaya
+
+    M02 -> DB: Menyimpan pesanan
+
+    alt Pesanan berhasil disimpan
+        DB --> M02: Konfirmasi penyimpanan
+        M02 --> UI: Pesanan berhasil dibuat
+        UI --> Pelanggan: Menampilkan ringkasan pesanan
+    else Penyimpanan gagal
+        DB --> M02: Gagal menyimpan pesanan
+        M02 --> UI: Pesanan gagal dibuat
+        UI --> Pelanggan: Menampilkan pesan kegagalan
+    end
+
+else Sesi tidak valid
+    M01 --> M02: Hak akses ditolak
+    M02 --> UI: Pesanan tidak dapat diproses
+    UI --> Pelanggan: Meminta login kembali
+end
+
+@enduml

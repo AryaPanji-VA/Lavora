@@ -65,4 +65,3 @@ Pelanggan dapat melihat metode penyerahan dan status terkait pesanan miliknya. S
 - **[Modul 1 — Autentikasi dan Pengaturan Hak Akses:](01-authentication-access-control.md)** memastikan pengguna hanya dapat mengakses informasi sesuai perannya.
 - **[Modul 2 — Pengelolaan Pesanan:](02-order-management.md)** menyediakan data pesanan yang membutuhkan pengambilan atau pengantaran.
 - **[Modul 4 — Pelacakan Status Laundry:](04-laundry-status-tracking.md)** menyediakan informasi status pengerjaan untuk menentukan kesiapan laundry diserahkan.
-- **[Modul 7 — Pengelolaan Notifikasi:](07-customer-notification.md)** mengirimkan notifikasi dalam sistem terkait kesiapan atau perubahan status penyerahan jika diperlukan.
