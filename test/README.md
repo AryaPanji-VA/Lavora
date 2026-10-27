@@ -8,7 +8,7 @@ Folder ini berisi deliverable **D6 (Test Case Design)** dan **D7 (Unit-Tested Co
 |---|---|
 | [`test_pricing.py`](test_pricing.py) | 10 unit test untuk fungsi `calculate_laundry_cost` |
 | [`Test_Case_Design.md`](Test_Case_Design.md) | Tabel desain test case D6 (TC-01 s/d TC-10) |
-| [`screenshot-2026-10-27_18-55-35.png`](screenshot-2026-10-27_18-55-35.png) | Bukti `pytest -v` lulus semua |
+| [`screenshot-2026-10-27_19-55-03.png`](screenshot-2026-10-27_19-55-03.png) | Bukti `pytest -v` lulus semua |
 | `__init__.py` | Menandai folder ini sebagai package Python |
 
 ## Cara menjalankan
