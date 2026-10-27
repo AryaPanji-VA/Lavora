@@ -21,7 +21,7 @@ Log ini mencatat kontribusi setiap anggota selama pengerjaan proyek. Setiap akti
 | 2026-10-27 | [Arya Panji] (AryaPanji-VA) | D7 | [Menambahkan pytest.ini dan requirements.txt]    | [35 min] | [dd4b794](https://github.com/AryaPanji-VA/Lavora/commit/dd4b794347d878a0359f5bf60df34af333877b20) |
 | 2026-10-27 | [Aryasatya Mu'adz Ramadhan] (aryasatyamr) | D3 | [Revisi Use Case .png]                | [43 min] | [2b659be](https://github.com/AryaPanji-VA/Lavora/commit/2b659be) |
 | 2026-10-27 | [Aryasatya Mu'adz Ramadhan] (aryasatyamr) | D3 | [Mengupdate Use Case .puml]                | [43 min] | [51eecd3](https://github.com/AryaPanji-VA/Lavora/commit/51eecd3) |
-| 2026-10-27 | [Aryasatya Mu'adz Ramadhan] (aryasatyamr) | D3 | [Mengerjakan README.md untuk use case]                | [24 min] | [7cbf9bf](https://github.com/AryaPanji-VA/Lavora/commit/7cbf9bf) |
+| 2026-10-27 | [Aryasatya Mu'adz Ramadhan] (aryasatyamr) | D3 | [Membuat dokumentasi keseluruhan D3 (Use Case)]                | [24 min] | [e1af504](https://github.com/AryaPanji-VA/Lavora/commit/e1af504) |
 | 2026-10-27 | [Bernardus_Rionard_L.S] (Rionard956) | D4 | [Mengerjakan README.md untuk Sequence Diagrams]      | [25 min] | [db51b5b](https://github.com/AryaPanji-VA/Lavora/commit/db51b5b) |
 | 2026-10-27 | [Arya Panji] (AryaPanji-VA) | D2 | [Membuat dokumentasi keseluruhan D2 (Modules]    | [20 min] | [4d0be8a](https://github.com/AryaPanji-VA/Lavora/commit/4d0be8a9ef974b9808d95a97975bf49cc53c5fba) |
 | 2026-10-27 | [Bernardus_Rionard_L.S] (Rionard956) | D6 | [Update Test Case Design]      | [10 min] | [05da825](https://github.com/AryaPanji-VA/Lavora/commit/05da825) |
